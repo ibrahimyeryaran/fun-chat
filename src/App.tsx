@@ -1,21 +1,12 @@
-import { useEffect } from 'react';
-import { connectSocket, disconnectSocket } from './api/socket.ts';
 import { RouterProvider } from '@tanstack/react-router';
-import { router } from './router.tsx';
-import { Loader } from './components/loader/loader.tsx';
+import { router } from './router';
+import { connectSocket } from './api/socket';
 
-function App() {
-  useEffect(() => {
-    connectSocket('ws://localhost:4000');
-    return () => disconnectSocket();
-  }, []);
-
-  return (
-    <>
-      <RouterProvider router={router} />
-      <Loader />
-    </>
-  );
+// Only connect to WebSocket in development
+if (import.meta.env.DEV) {
+  connectSocket('ws://localhost:4000');
 }
 
-export default App;
+export function App() {
+  return <RouterProvider router={router} />;
+}
