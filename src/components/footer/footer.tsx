@@ -4,9 +4,9 @@ export function Footer() {
   return (
     <footer className="flex items-center w-full justify-around p-4 absolute z-20 bottom-0">
       <p>2025</p>
-      <img src={'/fun-chat/rss-logo.png'} alt="RS School logo" className="h-8 w-auto max-[750px]:h-6"></img>
-      <Link to={'https://github.com/zagorky'} target="_blank" rel="noopener noreferrer">
-        Zagorky
+      <p className="text-sm">RS School</p>
+      <Link to={'https://github.com/ibrahimyeryaran'} target="_blank" rel="noopener noreferrer">
+        ibrahimyeryaran
       </Link>
     </footer>
   );

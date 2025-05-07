@@ -4,11 +4,8 @@ export function ErrorPage() {
   return (
     <Layout>
       <main className="flex flex-col items-center justify-center">
-        <h1 className="text-2xl font-bold text-pink-600 p-3 text-center max-[520px]:text-xl  transition-all duration-200 ease-in-out">
-          Error Page
-        </h1>
+        <h1 className="text-4xl font-bold mb-4">404</h1>
         <p className="text-xl">🥲 Page Not Found 🥲</p>
-        <img src={'/fun-chat/sasa.jpg'} alt={'error page '} />
       </main>
     </Layout>
   );
