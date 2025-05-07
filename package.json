@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://ibrahimyeryaran.github.io/fun-chat-main/",
+  "homepage": "https://ibrahimyeryaran.github.io/fun-chat/",
   "scripts": {
     "dev": "vite --open --force",
     "build": "tsc -b && vite build",
