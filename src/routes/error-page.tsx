@@ -8,7 +8,7 @@ export function ErrorPage() {
           Error Page
         </h1>
         <p className="text-xl">🥲 Page Not Found 🥲</p>
-        <img src={'/sasa.jpg'} alt={'error page '} />
+        <img src={'/fun-chat/sasa.jpg'} alt={'error page '} />
       </main>
     </Layout>
   );
