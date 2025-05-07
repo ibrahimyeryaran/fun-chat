@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 import { TanStackRouterVite } from '@tanstack/router-plugin/vite';
 
 export default defineConfig({
-  base: '/',
+  base: '/fun-chat-main/',
 
   build: {
     minify: true,
