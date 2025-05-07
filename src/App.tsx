@@ -3,7 +3,8 @@ import { router } from './router';
 import { connectSocket } from './api/socket';
 
 // Only connect to WebSocket in development
-if (import.meta.env.DEV) {
+const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+if (isLocalhost) {
   connectSocket('ws://localhost:4000');
 }
 
